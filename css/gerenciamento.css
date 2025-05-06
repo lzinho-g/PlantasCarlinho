@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    color: #2D3130;
+}
+
+/* Layout principal */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 264px;
+    height: 100vh;
+    position: fixed;
+    background: white;
+    border-right: 1px solid #E6E6E6;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 60px;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    padding: 18px;
+    background: #47A358;
+    box-shadow: 3.5px 2.63px 13.14px rgba(0, 0, 0, 0.25);
+    border-radius: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-shape {
+    width: 15px;
+    height: 16px;
+}
+
+.logo-text {
+    font-family: 'Jacques Francois', serif;
+    font-size: 18.5px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 660px;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-icon {
+    width: 26px;
+    height: 26px;
+}
+
+.orders-icon {
+    width: 14px;
+    height: 17px;
+    outline-offset: -1px;
+}
+
+.settings-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.logout-icon {
+    width: 16px;
+    height: 16px;
+    outline-offset: -1px;
+}
+
+.logout .menu-text {
+    color: #BE3333;
+}
+
+.menu-text {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+/* Conteúdo principal */
+.main-content {
+    margin-left: 264px;
+    width: calc(100% - 264px);
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    padding: 40px 40px 30px 40px;
+    border-bottom: 2px solid #E6E6E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+}
+
+.header-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3F4A48;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+}
+
+.action-button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.action-button.import {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid #C4C7C5;
+}
+
+.action-button.primary {
+    background: #47A358;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.action-icon {
+    width: 20px;
+    height: 18px;
+}
+
+.import-icon {
+    outline: 2px solid #444746;
+    outline-offset: -1px;
+}
+
+.add-icon {
+    outline: 2px solid white;
+    outline-offset: -1px;
+}
+
+.action-text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.content-container {
+    padding: 30px 40px;
+}
+
+
+.filter-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap; 
+    width: auto; 
+}
+
+.filter-button {
+    padding: 8px 12px; 
+    border-radius: 8px;
+    border: 1px solid #C4C7C5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    cursor: pointer;
+    white-space: nowrap; 
+}
+
+.filter-icon {
+    width: 15px;
+    height: 10px;
+    outline-offset: -0.75px;
+}
+
+.filter-text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto; 
+    min-width: 250px; 
+}
+
+.search-input {
+    width: 250px; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    border: 2px solid #E6E6E6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1; 
+}
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+    outline-offset: -1px;
+}
+
+.search-placeholder {
+    color: #989898;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.search-action {
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid #E6E6E6;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-checkbox {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    border: 1px solid #C4C7C5;
+    margin-right: 20px;
+}
+
+.row-checkbox {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    border: 1px solid #C4C7C5;
+    margin-right: 30px;
+}
+
+.price-badge {
+    padding: 7px 13px;
+    background: #DAEDEA;
+    border-radius: 5px;
+    color: #36685F;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Tabela de produtos */
+
+/* Barra de filtros */
+.filter-bar {
+    width: 100%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Estilos básicos para a tabela */
+.products-table {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background: white;
+}
+
+.products-table thead {
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+}
+
+/* Cabeçalho da tabela */
+.products-table thead tr th {
+  padding: 18px 16px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  vertical-align: middle;
+  position: relative;
+}
+
+.products-table thead tr th img {
+  margin-left: 5px;
+  vertical-align: middle;
+  width: 9px;
+}
+
+/* Estilo para o checkbox */
+.header-checkbox,
+.row-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+
+.products-table tbody tr td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+
+.products-table tbody tr td img {
+  vertical-align: middle;
+  max-width: 40px;
+  margin-right: 8px;
+}
+
+/* Estilo para o badge de preço */
+.price-badge {
+  display: inline-block;
+  background-color: #d1e7dd;
+  color: #0f5132;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.products-table tbody tr td img[alt="Editar"],
+.products-table tbody tr td img[alt="Excluir"] {
+  cursor: pointer;
+  width: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.products-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 200px;
+        padding: 20px;
+    }
+    
+    .main-content {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+    
+    .header {
+        padding: 20px;
+    }
+    
+    .content-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 70px;
+        padding: 15px 10px;
+    }
+    
+    .main-content {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+    }
+    
+    .logo-text, .menu-text {
+        display: none;
+    }
+    
+    .menu-item {
+        justify-content: center;
+        padding: 10px 5px;
+    }
+    
+    .menu-icon {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    
+    .header-actions {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    .action-button {
+        width: 48%;
+        justify-content: center;
+        padding: 8px 12px;
+    }
+    
+    .filter-options {
+        width: 100%;
+    }
+    
+    .search-bar {
+        width: 100%;
+    }
+    
+    .search-input {
+        max-width: 100%;
+    }
+    
+    .content-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        display: none;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .action-button {
+        width: 100%;
+    }
+    
+    .action-button + .action-button {
+        margin-top: 10px;
+    }
+    
+    .filter-button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .header-title {
+        font-size: clamp(16px, 5vw, 18px);
+    }
+}

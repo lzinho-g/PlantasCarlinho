@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/inter.ttf');
+}
+
+.teste {
+    font-family: 'Inter';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-bg {
+    width: 45px;
+    height: 45px;
+    padding: 25px;
+    background: #47A358;
+    border-radius: 116.49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Jacques Francois', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.logo img {
+    width: 21px;
+    height: 22px;
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    padding: 10px 30px;
+    background: white;
+    border-bottom: 2px solid #E6E6E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Seção hero */
+.hero-section {
+    height: 100vh;
+    flex: 1;
+    background-image: url("../assets/bg_admin.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    backdrop-filter: blur(25px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-card {
+    top: -100px;
+    padding: 50px 40px;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25.838px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.login-subtitle {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16.442px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.input-field {
+    width: 100%;
+    padding: 14.09px 33.64px;
+    border-radius: 42.05px;
+    outline: 1.68px solid #E6E6E6;
+    display: flex;
+    align-items: center;
+    gap: 16.82px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.input-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.input-text {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #E6E6E6;
+    font-size: 2vh;
+    font-weight: 400;
+    outline: none;
+}
+
+.input-text::placeholder {
+    color: #E6E6E6;
+    opacity: 0.5;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    background: #47A358;
+    border-radius: 50px;
+    border: none;
+    color: #E6E6E6;
+    font-size: 18.79px;
+    font-weight: 500;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #3a8a4a;
+}
+
+.forgot-password {
+    color: white;
+    font-size: 1.6vh;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .logo-container {
+        margin-bottom: 15px;
+    }
+    
+    .nav-menu {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .login-card {
+        padding: 30px 30px;
+        margin: 0 20px;
+    }
+}

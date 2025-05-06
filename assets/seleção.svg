@@ -1,0 +1,32 @@
+<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="9" height="16" fill="#1E1E1E"/>
+<g id="Gerenciamento">
+<rect width="1600" height="900" transform="translate(-650 -224)" fill="white"/>
+<g id="Filtro &#38; Tabela">
+<g id="Tabela" filter="url(#filter0_d_0_1)">
+<rect x="-346" y="-28" width="1256" height="655" rx="10" fill="white" shape-rendering="crispEdges"/>
+<g id="Cabe&#195;&#167;alho">
+<mask id="path-2-inside-1_0_1" fill="white">
+<path d="M-346 -28H910V44H-346V-28Z"/>
+</mask>
+<path d="M-346 -28V-29H-347V-28H-346ZM910 -28H911V-29H910V-28ZM910 44V45H911V44H910ZM-346 44H-347V45H-346V44ZM-346 -27H910V-29H-346V-27ZM909 -28V44H911V-28H909ZM910 43H-346V45H910V43ZM-345 44V-28H-347V44H-345Z" fill="#E6E6E6" mask="url(#path-2-inside-1_0_1)"/>
+<g id="C&#195;&#169;lula Cabe&#195;&#167;alho">
+<path id="Vector" d="M4.5 0L0 6.22222H9L4.5 0ZM4.5 16L9 9.77778H0L4.5 16Z" fill="#747876"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_1" x="-361" y="-43" width="1286" height="685" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="7.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+</defs>
+</svg>
